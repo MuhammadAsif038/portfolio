@@ -1,16 +1,29 @@
-# Muhammad Asif – Data Analyst | SQA Portfolio
+## ABOUT ME
 
-👋 Welcome to my portfolio website! I am **Muhammad Asif**, an aspiring **Data Analyst** with a passion for uncovering insights through data. This portfolio highlights my **skills**, **projects**, **education**, and **certifications**.
+👋 Welcome to my portfolio website! I am **Muhammad Asif**, an aspiring **Data Analyst** with a passion for turning data into actionable insights. I can help businesses in solving challenges and unlock growth. This portfolio highlights my **skills**, **projects**, **education**, and **certifications**.
 
 ---
 
-## 🔍 Objective
+## 🔍 OBJECTIVE
 
 Detail-oriented Data Analyst experienced in end-to-end data workflows—from extraction and cleaning to analysis and visualization. Proficient in **Python**, **SQL**, **Power BI**, and **Excel**, with a deep interest in **machine learning** and **data storytelling**.
 
 ---
 
-## 💼 Experience
+## 📊 MY PORTFOLIO
+_A Glympse of some of the projects I've been working on_
+
+- **CICIDS-2017 Anomaly Detection**: Feature ranking + classifiers
+- **Malaria Detection via CNNs**: Compared 7 models using image data
+- **Customer Churn Prediction**: Built scalable model in PySpark
+- **Sentiment Analysis (BERT, XGBoost, SVM)**: Hate speech classification
+- **Streamlit App – Background Remover**: CV + Streamlit
+- **Power BI Dashboards**: Road accidents & car sales
+- **Dementia Prediction Model**: Binary classification (SVM, XGBoost)
+
+---
+
+## 💼 EXPERIENCE
 
 ### Software Quality Assurance & Data Analyst  
 **DevGiant (2025–Present)**
@@ -29,19 +42,8 @@ Detail-oriented Data Analyst experienced in end-to-end data workflows—from ext
 
 ---
 
-## 📊 Projects
 
-- **CICIDS-2017 Anomaly Detection**: Feature ranking + classifiers
-- **Malaria Detection via CNNs**: Compared 7 models using image data
-- **Customer Churn Prediction**: Built scalable model in PySpark
-- **Sentiment Analysis (BERT, XGBoost, SVM)**: Hate speech classification
-- **Streamlit App – Background Remover**: CV + Streamlit
-- **Power BI Dashboards**: Road accidents & car sales
-- **Dementia Prediction Model**: Binary classification (SVM, XGBoost)
-
----
-
-## 🧠 Skills
+## 🧠 SKILLS
 
 **Languages**: Python, SQL, R, Octave  
 **Libraries**: Pandas, NumPy, Scikit-learn, Streamlit, Selenium  
@@ -53,7 +55,7 @@ Detail-oriented Data Analyst experienced in end-to-end data workflows—from ext
 
 ---
 
-## 🎓 Education
+## 🎓 EDUCATION
 
 - MS Computer Science (Coursework Completed) – COMSATS
 - MCS – Virtual University
@@ -63,7 +65,7 @@ Detail-oriented Data Analyst experienced in end-to-end data workflows—from ext
 
 ---
 
-## 📜 Certifications (selected)
+## 📜 CERTIFICATIONS (selected)
 
 - Machine Learning Specialization – DeepLearning.AI  
 - Big Data Systems – UC San Diego  
@@ -76,7 +78,7 @@ Detail-oriented Data Analyst experienced in end-to-end data workflows—from ext
 
 ---
 
-## 🌐 Contact
+## 🌐 CONTACT
 
 📧 **asifslk2024@gmail.com**  
 📍 Lahore, Pakistan  
@@ -84,5 +86,7 @@ Detail-oriented Data Analyst experienced in end-to-end data workflows—from ext
 🔗 [LinkedIn](#) | [GitHub](#) | [Kaggle](#)
 
 ---
+
+✅
 
 > This portfolio is built using **GitHub Pages + Jekyll** with interactive colors and fonts.
