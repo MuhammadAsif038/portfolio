@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Asif - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Muhammad Asif</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton skeleton-text large" style="width: 80%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton skeleton-text medium" style="width: 60%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton skeleton-text" style="width: 90%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton skeleton-text" style="width: 70%; margin-bottom: 2rem;"></div>
+                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                        <div class="skeleton skeleton-button"></div>
+                        <div class="skeleton skeleton-button"></div>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div class="skeleton" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                        <div class="skeleton" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                        <div class="skeleton" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+                    </div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <h1>Hi, I'm </h1><h1><span class="highlight">Muhammad Asif</span></h1>
+                    <p class="hero-subtitle">Aspiring Data Analyst</p>
+                    <p class="hero-description">Transforming data into actionable insights through Python, SQL, Power BI, and Machine Learning</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="mailto:asifslk2024@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Kaggle">
+                            <i class="fab fa-kaggle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton skeleton-avatar"></div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Muhammad Asif">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h2 class="section-title">Project Showcase</h2>
+            <div class="carousel-container">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton skeleton-carousel"></div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-slide active">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Data Analysis Dashboard">
+                            <div class="carousel-caption">
+                                <h3>Power BI Dashboards</h3>
+                                <p>Interactive business intelligence dashboards</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Machine Learning Model">
+                            <div class="carousel-caption">
+                                <h3>ML Model Results</h3>
+                                <p>Advanced machine learning implementations</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Data Visualization">
+                            <div class="carousel-caption">
+                                <h3>Data Visualizations</h3>
+                                <p>Compelling data storytelling through charts</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Python Analysis">
+                            <div class="carousel-caption">
+                                <h3>Python Analytics</h3>
+                                <p>Advanced data analysis with Python</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators" id="indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Detail-oriented Data Analyst with hands-on experience in end-to-end data workflows—from data extraction, cleaning, and transformation to advanced analysis and visualization.</p>
+                    <p>Proficient in Python, SQL, Power BI, and Excel for exploratory data analysis, predictive modeling, and deriving actionable insights. Experienced in applying machine learning techniques to uncover patterns, improve predictions, and support data-driven decision-making.</p>
+                    <p>Skilled in data storytelling and communicating complex findings to stakeholders through clear, impactful visualizations and reports.</p>
+                    <div class="about-stats">
+                        <!-- Skeleton Content -->
+                        <div class="skeleton-content" style="display: flex; gap: 2rem;">
+                            <div class="skeleton-stat">
+                                <div class="skeleton skeleton-stat-number"></div>
+                                <div class="skeleton skeleton-stat-text"></div>
+                            </div>
+                            <div class="skeleton-stat">
+                                <div class="skeleton skeleton-stat-number"></div>
+                                <div class="skeleton skeleton-stat-text"></div>
+                            </div>
+                            <div class="skeleton-stat">
+                                <div class="skeleton skeleton-stat-number"></div>
+                                <div class="skeleton skeleton-stat-text"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Actual Content -->
+                        <div class="actual-content" style="display: flex; gap: 2rem;">
+                            <div class="stat">
+                                <h3>20+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>15+</h3>
+                                <p>Certifications</p>
+                            </div>
+                            <div class="stat">
+                                <h3>8+</h3>
+                                <p>Data Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Data Analysis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton-timeline-item">
+                        <div class="skeleton skeleton-timeline-date"></div>
+                        <div class="skeleton skeleton-timeline-content"></div>
+                    </div>
+                    <div class="skeleton-timeline-item">
+                        <div class="skeleton skeleton-timeline-date"></div>
+                        <div class="skeleton skeleton-timeline-content"></div>
+                    </div>
+                    <div class="skeleton-timeline-item">
+                        <div class="skeleton skeleton-timeline-date"></div>
+                        <div class="skeleton skeleton-timeline-content"></div>
+                    </div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Software Quality Assurance & Data Analyst</h3>
+                            <h4>DevGiant</h4>
+                            <ul>
+                                <li>Used Python (Selenium), SQL, and Excel for data extraction, transformation, and reporting</li>
+                                <li>Created reports and dashboards to track defects, timelines, and release quality using GitLab</li>
+                                <li>Collaborated cross-functionally with developers and product teams to ensure data quality in UAT and production environments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2003 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Instructional + Admin Roles</h3>
+                            <h4>Ministry of Defence</h4>
+                            <ul>
+                                <li>Led data-driven evaluations and performance analysis for education programs</li>
+                                <li>Conducted IT and data training workshops and developed educational materials with strong analytical and research elements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2000 - 2003</div>
+                        <div class="timeline-content">
+                            <h3>System Administrator</h3>
+                            <h4>SAGA Sports (Pvt) Ltd, Sialkot</h4>
+                            <ul>
+                                <li>Managing and troubleshooting LAN and Database Server</li>
+                                <li>Designing Ad hoc Reports in Seagate Crystal Reports</li>
+                                <li>Database administration (Import, Export, SQL, Backup)</li>
+                                <li>Implementation of in-house developed software and user training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-code"></i> Programming</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Python</span>
+                                    <span class="skill-item">SQL</span>
+                                    <span class="skill-item">R</span>
+                                    <span class="skill-item">Octave (Matlab)</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Programming Details</h3>
+                                <ul>
+                                    <li>5+ years Python experience</li>
+                                    <li>Advanced SQL queries & optimization</li>
+                                    <li>Statistical analysis with R</li>
+                                    <li>Mathematical modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Power BI</span>
+                                    <span class="skill-item">Excel</span>
+                                    <span class="skill-item">SPSS</span>
+                                    <span class="skill-item">Matplotlib</span>
+                                    <span class="skill-item">Seaborn</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Visualization Expertise</h3>
+                                <ul>
+                                    <li>Interactive dashboards</li>
+                                    <li>Statistical analysis</li>
+                                    <li>Data storytelling</li>
+                                    <li>Business intelligence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-robot"></i> Machine Learning & AI</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Scikit-learn</span>
+                                    <span class="skill-item">TensorFlow</span>
+                                    <span class="skill-item">CNNs</span>
+                                    <span class="skill-item">BERT</span>
+                                    <span class="skill-item">XGBoost</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>ML Specializations</h3>
+                                <ul>
+                                    <li>Deep learning models</li>
+                                    <li>NLP & text analysis</li>
+                                    <li>Computer vision</li>
+                                    <li>Predictive modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-database"></i> Big Data & Databases</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">PySpark</span>
+                                    <span class="skill-item">Hadoop</span>
+                                    <span class="skill-item">Hive</span>
+                                    <span class="skill-item">SQL Server</span>
+                                    <span class="skill-item">MySQL</span>
+                                    <span class="skill-item">Oracle</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Big Data Skills</h3>
+                                <ul>
+                                    <li>Distributed computing</li>
+                                    <li>Data warehousing</li>
+                                    <li>ETL processes</li>
+                                    <li>Database optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Jupyter</span>
+                                    <span class="skill-item">VS Code</span>
+                                    <span class="skill-item">GitHub</span>
+                                    <span class="skill-item">Streamlit</span>
+                                    <span class="skill-item">Selenium</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Development Tools</h3>
+                                <ul>
+                                    <li>Version control</li>
+                                    <li>Web scraping</li>
+                                    <li>App development</li>
+                                    <li>Testing automation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Data Storytelling</span>
+                                    <span class="skill-item">Critical Thinking</span>
+                                    <span class="skill-item">Communication</span>
+                                    <span class="skill-item">Collaboration</span>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Professional Skills</h3>
+                                <ul>
+                                    <li>Stakeholder communication</li>
+                                    <li>Problem-solving</li>
+                                    <li>Team leadership</li>
+                                    <li>Project management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Skeleton Content -->
+                <div class="skeleton-content">
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
+                </div>
+                
+                <!-- Actual Content -->
+                <div class="actual-content">
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="CICIDS-2017 Analysis">
+                                </div>
+                                <div class="project-content">
+                                    <h3>CICIDS-2017 Feature Analysis for Anomaly Detection</h3>
+                                    <p>Applied Information Gain feature selection on network intrusion dataset, testing 7 feature subsets across 5 classifiers with 10-fold cross-validation.</p>
+                                    <div class="project-tech">
+                                        <span>Python</span>
+                                        <span>Weka</span>
+                                        <span>Machine Learning</span>
+                                        <span>Feature Selection</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>Technical Details</h3>
+                                    <ul>
+                                        <li>Merged 8 CSV files into unified dataset</li>
+                                        <li>Reduced features from original to 77 key features</li>
+                                        <li>Evaluated accuracy, TPR/FPR, precision, recall</li>
+                                        <li>Improved anomaly detection performance</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i> Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Malaria Detection">
+                                </div>
+                                <div class="project-content">
+                                    <h3>Malaria Detection via CNN</h3>
+                                    <p>Comparative study using 27,610 NIH blood smear images, comparing ML models and CNNs (LeNet-5, AlexNet, ResNet, DenseNet, EfficientNet).</p>
+                                    <div class="project-tech">
+                                        <span>Deep Learning</span>
+                                        <span>CNN</span>
+                                        <span>Medical Imaging</span>
+                                        <span>TensorFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>Research Impact</h3>
+                                    <ul>
+                                        <li>Binary classification of blood smears</li>
+                                        <li>Compared 5 different CNN architectures</li>
+                                        <li>Achieved high accuracy in medical diagnosis</li>
+                                        <li>Published research findings</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-file-pdf"></i> Paper
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Customer Churn">
+                                </div>
+                                <div class="project-content">
+                                    <h3>Customer Churn Prediction</h3>
+                                    <p>Built scalable churn prediction model using PySpark with regression algorithms, optimized for recall using F2-score evaluation.</p>
+                                    <div class="project-tech">
+                                        <span>PySpark</span>
+                                        <span>Machine Learning</span>
+                                        <span>Big Data</span>
+                                        <span>Predictive Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>Business Value</h3>
+                                    <ul>
+                                        <li>Scalable big data processing</li>
+                                        <li>Real-time churn prediction</li>
+                                        <li>Customer retention insights</li>
+                                        <li>Deployed production model</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i> Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Sentiment Analysis">
+                                </div>
+                                <div class="project-content">
+                                    <h3>Hate Speech Classification</h3>
+                                    <p>NLP project classifying hate speech using multi-platform data (YouTube, Reddit, Twitter, Wikipedia) with BERT achieving superior performance.</p>
+                                    <div class="project-tech">
+                                        <span>NLP</span>
+                                        <span>BERT</span>
+                                        <span>Text Classification</span>
+                                        <span>Deep Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>NLP Innovation</h3>
+                                    <ul>
+                                        <li>Multi-platform data integration</li>
+                                        <li>Advanced text preprocessing</li>
+                                        <li>BERT contextual understanding</li>
+                                        <li>High accuracy classification</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-chart-line"></i> Results
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Power BI Dashboard">
+                                </div>
+                                <div class="project-content">
+                                    <h3>Interactive Dashboards (Power BI)</h3>
+                                    <p>Created comprehensive dashboards for road accident analysis and car sales with interactive slicers, KPIs, and visual storytelling.</p>
+                                    <div class="project-tech">
+                                        <span>Power BI</span>
+                                        <span>Excel</span>
+                                        <span>Data Visualization</span>
+                                        <span>Business Intelligence</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>Dashboard Features</h3>
+                                    <ul>
+                                        <li>Interactive slicers and filters</li>
+                                        <li>Real-time KPI monitoring</li>
+                                        <li>Visual data storytelling</li>
+                                        <li>Executive reporting</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-chart-bar"></i> Dashboard
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-download"></i> Download
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=200&width=300" alt="Streamlit App">
+                                </div>
+                                <div class="project-content">
+                                    <h3>Image Background Remover App</h3>
+                                    <p>Interactive Streamlit application for automatic background removal using OpenCV and computer vision techniques.</p>
+                                    <div class="project-tech">
+                                        <span>Streamlit</span>
+                                        <span>OpenCV</span>
+                                        <span>Computer Vision</span>
+                                        <span>Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="project-details">
+                                    <h3>App Features</h3>
+                                    <ul>
+                                        <li>Real-time image processing</li>
+                                        <li>User-friendly interface</li>
+                                        <li>Multiple image formats</li>
+                                        <li>Deployed web application</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-play"></i> Try App
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-content">
+                <div class="education-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education-item">
+                        <h4>MS Computer Science</h4>
+                        <p>COMSATS University Islamabad | 2019-2023</p>
+                        <p class="education-note">(Course work Completed)</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Master of Computer Science</h4>
+                        <p>Virtual University of Pakistan | 2009-2011</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Post Graduate Diploma in Software Engineering</h4>
+                        <p>Govt Murray College Sialkot | 1999-2000</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Bachelor of Science & Bachelor of Education</h4>
+                        <p>University of the Punjab | 1997 & 2003</p>
+                    </div>
+                </div>
+                
+                <div class="certifications-section">
+                    <h3><i class="fas fa-certificate"></i> Key Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="cert-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Applied Data Science Lab - WorldQuant</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning Specialization - DeepLearning.AI</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-database"></i>
+                            <span>Big Data Specialization - UC San Diego</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Modern Big Data Analysis with SQL - Cloudera</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python for Data Science - IBM</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI Certification - Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's collaborate on data-driven solutions!</h3>
+                    <p>I'm passionate about turning data into actionable insights and always interested in new opportunities and exciting data projects.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>asifslk2024@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+92 347 4195952</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lahore, Pakistan</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Available for Remote Work</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Kaggle">
+                            <i class="fab fa-kaggle"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Muhammad Asif. All rights reserved. | Data Analyst Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
