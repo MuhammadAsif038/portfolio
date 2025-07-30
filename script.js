@@ -1,3 +1,75 @@
+// Language Management
+class LanguageManager {
+  constructor() {
+    this.currentLanguage = localStorage.getItem("language") || "en"
+    this.translations = {
+      en: {},
+      ar: {},
+    }
+  }
+
+  init() {
+    this.applyLanguage(this.currentLanguage)
+    this.setupLanguageToggle()
+  }
+
+  setupLanguageToggle() {
+    const languageToggle = document.getElementById("language-toggle")
+    const langText = languageToggle.querySelector(".lang-text")
+
+    // Set initial language text
+    langText.textContent = this.currentLanguage === "en" ? "عربي" : "English"
+
+    languageToggle.addEventListener("click", () => {
+      this.currentLanguage = this.currentLanguage === "en" ? "ar" : "en"
+      localStorage.setItem("language", this.currentLanguage)
+      this.applyLanguage(this.currentLanguage)
+      langText.textContent = this.currentLanguage === "en" ? "عربي" : "English"
+    })
+  }
+
+  applyLanguage(lang) {
+    const html = document.documentElement
+    const body = document.body
+
+    // Set language and direction
+    html.setAttribute("lang", lang)
+    html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr")
+
+    // Update all elements with data attributes
+    const elements = document.querySelectorAll("[data-en], [data-ar]")
+    elements.forEach((element) => {
+      const text = element.getAttribute(`data-${lang}`)
+      if (text) {
+        element.textContent = text
+      }
+    })
+
+    // Update form placeholders
+    const formElements = document.querySelectorAll("[data-placeholder-en], [data-placeholder-ar]")
+    formElements.forEach((element) => {
+      const placeholder = element.getAttribute(`data-placeholder-${lang}`)
+      if (placeholder) {
+        element.setAttribute("placeholder", placeholder)
+      }
+    })
+
+    // Update page title
+    const title = document.querySelector("title")
+    const titleText = title.getAttribute(`data-${lang}`)
+    if (titleText) {
+      title.textContent = titleText
+    }
+
+    // Apply font family for Arabic
+    if (lang === "ar") {
+      body.style.fontFamily = "'Amiri', 'Arial', sans-serif"
+    } else {
+      body.style.fontFamily = '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif'
+    }
+  }
+}
+
 // Skeleton Loading Manager
 class SkeletonLoader {
   constructor() {
@@ -153,9 +225,13 @@ class PageLoader {
   constructor() {
     this.skeletonLoader = new SkeletonLoader()
     this.imageLoader = new ImageLoader()
+    this.languageManager = new LanguageManager()
   }
 
   async init() {
+    // Initialize language first
+    this.languageManager.init()
+
     // Show skeleton loading immediately
     this.skeletonLoader.init()
 
@@ -403,17 +479,6 @@ function typeWriter(element, text, speed = 100) {
   type()
 }
 
-// Initialize typing animation when page loads
-// window.addEventListener("load", () => {
-//   const heroTitle = document.querySelector(".hero h1")
-//   if (heroTitle) {
-//     const originalText = heroTitle.innerHTML
-//     setTimeout(() => {
-//       typeWriter(heroTitle, originalText, 50)
-//     }, 500)
-//   }
-// })
-
 // Scroll to top functionality
 function scrollToTop() {
   window.scrollTo({
@@ -472,13 +537,6 @@ const skillObserver = new IntersectionObserver((entries) => {
   })
 })
 
-// skillItems.forEach((item) => {
-//   item.style.opacity = "0"
-//   item.style.transform = "translateY(20px)"
-//   item.style.transition = "all 0.5s ease"
-//   skillObserver.observe(item)
-// })
-
 // Stats counter animation
 function animateStats() {
   const stats = document.querySelectorAll(".stat h3")
@@ -500,21 +558,6 @@ function animateStats() {
     }, 50)
   })
 }
-
-// Trigger stats animation when about section is visible
-// const aboutSection = document.querySelector(".about")
-// const statsObserver = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       animateStats()
-//       statsObserver.unobserve(entry.target)
-//     }
-//   })
-// })
-
-// if (aboutSection) {
-//   statsObserver.observe(aboutSection)
-// }
 
 // Add active state to navigation links based on scroll position
 window.addEventListener("scroll", () => {
@@ -597,6 +640,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // Carousel functionality
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.getElementById("carousel")
+  if (!carousel) return
+
   const slides = carousel.querySelectorAll(".carousel-slide")
   const prevBtn = document.getElementById("prevBtn")
   const nextBtn = document.getElementById("nextBtn")
@@ -641,18 +686,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Event listeners
-  nextBtn.addEventListener("click", nextSlide)
-  prevBtn.addEventListener("click", prevSlide)
+  if (nextBtn) nextBtn.addEventListener("click", nextSlide)
+  if (prevBtn) prevBtn.addEventListener("click", prevSlide)
 
   // Auto-play carousel
-  setInterval(nextSlide, 5000)
+  let autoPlayInterval = setInterval(nextSlide, 5000)
 
   // Pause auto-play on hover
   carousel.addEventListener("mouseenter", () => {
     clearInterval(autoPlayInterval)
   })
-
-  let autoPlayInterval = setInterval(nextSlide, 5000)
 
   carousel.addEventListener("mouseleave", () => {
     autoPlayInterval = setInterval(nextSlide, 5000)
@@ -662,9 +705,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Keyboard navigation for carousel
 document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") {
-    document.getElementById("prevBtn").click()
+    const prevBtn = document.getElementById("prevBtn")
+    if (prevBtn) prevBtn.click()
   } else if (e.key === "ArrowRight") {
-    document.getElementById("nextBtn").click()
+    const nextBtn = document.getElementById("nextBtn")
+    if (nextBtn) nextBtn.click()
   }
 })
 
@@ -672,26 +717,31 @@ document.addEventListener("keydown", (e) => {
 let startX = 0
 let endX = 0
 
-document.getElementById("carousel").addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX
-})
+const carousel = document.getElementById("carousel")
+if (carousel) {
+  carousel.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX
+  })
 
-document.getElementById("carousel").addEventListener("touchend", (e) => {
-  endX = e.changedTouches[0].clientX
-  handleSwipe()
-})
+  carousel.addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].clientX
+    handleSwipe()
+  })
 
-function handleSwipe() {
-  const threshold = 50
-  const diff = startX - endX
+  function handleSwipe() {
+    const threshold = 50
+    const diff = startX - endX
 
-  if (Math.abs(diff) > threshold) {
-    if (diff > 0) {
-      // Swipe left - next slide
-      document.getElementById("nextBtn").click()
-    } else {
-      // Swipe right - previous slide
-      document.getElementById("prevBtn").click()
+    if (Math.abs(diff) > threshold) {
+      if (diff > 0) {
+        // Swipe left - next slide
+        const nextBtn = document.getElementById("nextBtn")
+        if (nextBtn) nextBtn.click()
+      } else {
+        // Swipe right - previous slide
+        const prevBtn = document.getElementById("prevBtn")
+        if (prevBtn) prevBtn.click()
+      }
     }
   }
 }

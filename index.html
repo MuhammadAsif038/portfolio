@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Asif - Data Analyst Portfolio</title>
+    <title data-en="Muhammad Asif - Data Analyst Portfolio" data-ar="محمد عاصف - محفظة محلل البيانات">Muhammad Asif - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -15,17 +16,27 @@
                 <a href="#home">Muhammad Asif</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-ar="نبذة">About</a>
+                <a href="#experience" class="nav-link" data-en="Experience" data-ar="الخبرة">Experience</a>
+                <a href="#skills" class="nav-link" data-en="Skills" data-ar="المهارات">Skills</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
+                <a href="#education" class="nav-link" data-en="Education" data-ar="التعليم">Education</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-ar="اتصل">Contact</a>
             </div>
-            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div class="nav-controls">
+                <button id="language-toggle" class="language-toggle" title="Toggle Language">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-text">عربي</span>
+                </button>
+                <a href="/resume.pdf" download="Muhammad_Asif_Resume.pdf" class="resume-download" title="Download Resume">
+                    <i class="fas fa-download"></i>
+                    <span class="resume-text" data-en="Resume" data-ar="السيرة الذاتية">Resume</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -57,21 +68,21 @@
                 
                 <!-- Actual Content -->
                 <div class="actual-content">
-                    <h1>Hi, I'm </h1><h1><span class="highlight">Muhammad Asif</span></h1>
-                    <p class="hero-subtitle">Aspiring Data Analyst</p>
-                    <p class="hero-description">Transforming data into actionable insights through Python, SQL, Power BI, and Machine Learning</p>
+                    <h1 data-en="Hi, I'm Muhammad Asif" data-ar="مرحباً، أنا محمد آصف">Hi, I'm <span class="highlight">Muhammad Asif</span></h1>
+                    <p class="hero-subtitle" data-en="Aspiring Data Analyst | SQA @ DevGiant | Python Developer | SQL | Power BI | Advanced Excel" data-ar="محلل بيانات طموح | ضمان جودة البرمجيات في ديف جاينت | مطوّر بايثون | SQL | باور بي آي | إكسل متقدم">Aspiring Data Analyst | SQA @ DevGiant | Python Developer | SQL | Power BI | Advanced Excel</p>
+                    <p class="hero-description" data-en="Transforming data into actionable insights through Python, SQL, Power BI, and Machine Learning" data-ar="تحويل البيانات إلى رؤى قابلة للتنفيذ من خلال Python و SQL و Power BI والتعلم الآلي">Transforming data into actionable insights through Python, SQL, Power BI, and Machine Learning</p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Projects</a>
-                        <a href="mailto:asifslk2024@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary" data-en="View My Projects" data-ar="عرض مشاريعي">View My Projects</a>
+                        <a href="mailto:asifslk2024@gmail.com" class="btn btn-secondary" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</a>
                     </div>
                     <div class="hero-social">
-                        <a href="#" class="social-link" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/muhammad-asif-96927a1b8/" class="social-link" title="LinkedIn" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="social-link" title="GitHub">
+                        <a href="https://github.com/MuhammadAsif038" class="social-link" title="GitHub" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" class="social-link" title="Kaggle">
+                        <a href="https://www.kaggle.com/muhammadasif038" class="social-link" title="Kaggle" target="_blank">
                             <i class="fab fa-kaggle"></i>
                         </a>
                     </div>
@@ -85,7 +96,7 @@
                 
                 <!-- Actual Content -->
                 <div class="actual-content">
-                    <img src="/placeholder.svg?height=400&width=400" alt="Muhammad Asif">
+                    <img src="./img/photo.jpg?height=400&width=400" alt="Muhammad Asif">
                 </div>
             </div>
         </div>
@@ -94,7 +105,7 @@
     <!-- Image Carousel Section -->
     <section id="showcase" class="showcase">
         <div class="container">
-            <h2 class="section-title">Project Showcase</h2>
+            <h2 class="section-title" data-en="Project Showcase" data-ar="عرض المشاريع">Project Showcase</h2>
             <div class="carousel-container">
                 <!-- Skeleton Content -->
                 <div class="skeleton-content">
@@ -107,29 +118,29 @@
                         <div class="carousel-slide active">
                             <img src="/placeholder.svg?height=400&width=600" alt="Data Analysis Dashboard">
                             <div class="carousel-caption">
-                                <h3>Power BI Dashboards</h3>
-                                <p>Interactive business intelligence dashboards</p>
+                                <h3 data-en="Power BI Dashboards" data-ar="لوحات معلومات Power BI">Power BI Dashboards</h3>
+                                <p data-en="Interactive business intelligence dashboards" data-ar="لوحات معلومات ذكية تفاعلية للأعمال">Interactive business intelligence dashboards</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <img src="/placeholder.svg?height=400&width=600" alt="Machine Learning Model">
                             <div class="carousel-caption">
-                                <h3>ML Model Results</h3>
-                                <p>Advanced machine learning implementations</p>
+                                <h3 data-en="ML Model Results" data-ar="نتائج نماذج التعلم الآلي">ML Model Results</h3>
+                                <p data-en="Advanced machine learning implementations" data-ar="تطبيقات متقدمة للتعلم الآلي">Advanced machine learning implementations</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <img src="/placeholder.svg?height=400&width=600" alt="Data Visualization">
                             <div class="carousel-caption">
-                                <h3>Data Visualizations</h3>
-                                <p>Compelling data storytelling through charts</p>
+                                <h3 data-en="Data Visualizations" data-ar="تصورات البيانات">Data Visualizations</h3>
+                                <p data-en="Compelling data storytelling through charts" data-ar="سرد مقنع للبيانات من خلال الرسوم البيانية">Compelling data storytelling through charts</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <img src="/placeholder.svg?height=400&width=600" alt="Python Analysis">
                             <div class="carousel-caption">
-                                <h3>Python Analytics</h3>
-                                <p>Advanced data analysis with Python</p>
+                                <h3 data-en="Python Analytics" data-ar="تحليلات Python">Python Analytics</h3>
+                                <p data-en="Advanced data analysis with Python" data-ar="تحليل متقدم للبيانات باستخدام Python">Advanced data analysis with Python</p>
                             </div>
                         </div>
                     </div>
@@ -148,48 +159,29 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-en="About Me" data-ar="نبذة عني">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Detail-oriented Data Analyst with hands-on experience in end-to-end data workflows—from data extraction, cleaning, and transformation to advanced analysis and visualization.</p>
-                    <p>Proficient in Python, SQL, Power BI, and Excel for exploratory data analysis, predictive modeling, and deriving actionable insights. Experienced in applying machine learning techniques to uncover patterns, improve predictions, and support data-driven decision-making.</p>
-                    <p>Skilled in data storytelling and communicating complex findings to stakeholders through clear, impactful visualizations and reports.</p>
-                    <div class="about-stats">
-                        <!-- Skeleton Content -->
-                        <div class="skeleton-content" style="display: flex; gap: 2rem;">
-                            <div class="skeleton-stat">
-                                <div class="skeleton skeleton-stat-number"></div>
-                                <div class="skeleton skeleton-stat-text"></div>
-                            </div>
-                            <div class="skeleton-stat">
-                                <div class="skeleton skeleton-stat-number"></div>
-                                <div class="skeleton skeleton-stat-text"></div>
-                            </div>
-                            <div class="skeleton-stat">
-                                <div class="skeleton skeleton-stat-number"></div>
-                                <div class="skeleton skeleton-stat-text"></div>
-                            </div>
+                    <p data-en="Detail-oriented Data Analyst with hands-on experience in end-to-end data workflows—from data extraction, cleaning, and transformation to advanced analysis and visualization." data-ar="محلل بيانات دقيق مع خبرة عملية في سير عمل البيانات الشامل - من استخراج البيانات وتنظيفها وتحويلها إلى التحليل المتقدم والتصور.">Detail-oriented Data Analyst with hands-on experience in end-to-end data workflows—from data extraction, cleaning, and transformation to advanced analysis and visualization.</p>
+                    <p data-en="Proficient in Python, SQL, Power BI, and Excel for exploratory data analysis, predictive modeling, and deriving actionable insights. Experienced in applying machine learning techniques to uncover patterns, improve predictions, and support data-driven decision-making." data-ar="ماهر في Python و SQL و Power BI و Excel لتحليل البيانات الاستكشافي والنمذجة التنبؤية واستخراج الرؤى القابلة للتنفيذ. خبرة في تطبيق تقنيات التعلم الآلي لاكتشاف الأنماط وتحسين التنبؤات ودعم اتخاذ القرارات المبنية على البيانات.">Proficient in Python, SQL, Power BI, and Excel for exploratory data analysis, predictive modeling, and deriving actionable insights. Experienced in applying machine learning techniques to uncover patterns, improve predictions, and support data-driven decision-making.</p>
+                    <p data-en="Skilled in data storytelling and communicating complex findings to stakeholders through clear, impactful visualizations and reports." data-ar="ماهر في سرد البيانات وتوصيل النتائج المعقدة لأصحاب المصلحة من خلال التصورات والتقارير الواضحة والمؤثرة.">Skilled in data storytelling and communicating complex findings to stakeholders through clear, impactful visualizations and reports.</p>
+                     <div  style="display: flex; flex-direction: row; gap: 4rem; align-items: center; justify-content: space-around; height: 5x0px;">
+                        <div style="flex: 1; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem 1rem; font-family: 'Segoe UI', sans-serif;">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: bold; letter-spacing: 1px;">20+</h3>
+                            <p style="font-size: 1.1rem; margin: 0; font-weight: 500;">Years Experience</p>
                         </div>
-                        
-                        <!-- Actual Content -->
-                        <div class="actual-content" style="display: flex; gap: 2rem;">
-                            <div class="stat">
-                                <h3>20+</h3>
-                                <p>Years Experience</p>
-                            </div>
-                            <div class="stat">
-                                <h3>15+</h3>
-                                <p>Certifications</p>
-                            </div>
-                            <div class="stat">
-                                <h3>8+</h3>
-                                <p>Data Projects</p>
-                            </div>
+                        <div style="flex: 1; background: linear-gradient(135deg, #ff6b6b 0%, #f39c12 100%); color: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem 1rem; font-family: 'Segoe UI', sans-serif;">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: bold; letter-spacing: 1px;">15+</h3>
+                            <p style="font-size: 1.1rem; margin: 0; font-weight: 500;">Certifications</p>
+                        </div>
+                        <div style="flex: 1; background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%); color: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem 1rem; font-family: 'Segoe UI', sans-serif;">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: bold; letter-spacing: 1px;">8+</h3>
+                            <p style="font-size: 1.1rem; margin: 0; font-weight: 500;">Data Projects</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="/placeholder.svg?height=300&width=300" alt="Data Analysis">
+                    <img src="/img/__visual_selection_18_0HD5MS.webp" alt="Data Analysis">
                 </div>
             </div>
         </div>
@@ -198,59 +190,49 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title" data-en="Professional Experience" data-ar="الخبرة المهنية">Professional Experience</h2>
             <div class="timeline">
-                <!-- Skeleton Content -->
-                <div class="skeleton-content">
-                    <div class="skeleton-timeline-item">
-                        <div class="skeleton skeleton-timeline-date"></div>
-                        <div class="skeleton skeleton-timeline-content"></div>
-                    </div>
-                    <div class="skeleton-timeline-item">
-                        <div class="skeleton skeleton-timeline-date"></div>
-                        <div class="skeleton skeleton-timeline-content"></div>
-                    </div>
-                    <div class="skeleton-timeline-item">
-                        <div class="skeleton skeleton-timeline-date"></div>
-                        <div class="skeleton skeleton-timeline-content"></div>
-                    </div>
-                </div>
-                
-                <!-- Actual Content -->
                 <div class="actual-content">
                     <div class="timeline-item">
                         <div class="timeline-date">2025 - Present</div>
                         <div class="timeline-content">
-                            <h3>Software Quality Assurance & Data Analyst</h3>
+                            <h3 data-en="Software Quality Assurance & Data Analyst" data-ar="ضمان جودة البرمجيات ومحلل البيانات">Software Quality Assurance & Data Analyst</h3>
                             <h4>DevGiant</h4>
                             <ul>
-                                <li>Used Python (Selenium), SQL, and Excel for data extraction, transformation, and reporting</li>
-                                <li>Created reports and dashboards to track defects, timelines, and release quality using GitLab</li>
-                                <li>Collaborated cross-functionally with developers and product teams to ensure data quality in UAT and production environments</li>
+                                <li data-en="Used Python (Selenium), SQL, and Excel for data extraction, transformation, and reporting" data-ar="استخدام Python (Selenium) و SQL و Excel لاستخراج البيانات وتحويلها وإعداد التقارير">Used Python (Selenium), SQL, and Excel for data extraction, transformation, and reporting</li>
+                                <li data-en="Created reports and dashboards to track defects, timelines, and release quality using GitLab" data-ar="إنشاء التقارير ولوحات المعلومات لتتبع العيوب والجداول الزمنية وجودة الإصدار باستخدام GitLab">Created reports and dashboards to track defects, timelines, and release quality using GitLab</li>
+                                <li data-en="Collaborated cross-functionally with developers and product teams to ensure data quality in UAT and production environments" data-ar="التعاون متعدد الوظائف مع المطورين وفرق المنتجات لضمان جودة البيانات في بيئات UAT والإنتاج">Collaborated cross-functionally with developers and product teams to ensure data quality in UAT and production environments</li>
+                                <li data-en="Execute manual test cases to identify software defects and inconsistencies." data-ar="تنفيذ حالات اختبار يدوية لتحديد عيوب البرمجيات وعدم الاتساق">Execute manual test cases to identify software defects and inconsistencies.</li>
+                                <li data-en="Develop and maintain test plans, test cases, and test reports." data-ar="إعداد وصيانة خطط الاختبار، وحالات الاختبار، وتقارير الاختبار">Develop and maintain test plans, test cases, and test reports.</li>
+                                <li data-en="Perform functional, regression, and UI testing on web and desktop applications." data-ar="  إجراء اختبارات وظيفية، واختبارات إعادة التحقق واختبارات واجهة المستخدم للتطبيقات الويب والتطبيقات المكتبية">Perform functional, regression, and UI testing on web and desktop applications.</li>
+                                <li data-en="Use Selenium (basic level) for test automation under guidance." data-ar="استخدام أداة Selenium (بمستوى أساسي) لأتمتة الاختبارات تحت الإشراف">Use Selenium (basic level) for test automation under guidance.</li>
+                                <li data-en="Report bugs, track issues, and collaborate with developers for resolution." data-ar="(Bugs)،الإبلاغ عن الأخطاء  وتتبع المشكلات، والتعاون مع المطورين لحلها">Report bugs, track issues, and collaborate with developers for resolution.</li>
+                                <li data-en="API testing using Postman." data-ar="Postmanباستخدام أداة  (API) إجراء اختبارات واجهة برمجة التطبيقات">API testing using Postman.</li>
+                                <li data-en="Develop seeder file in javascript to load data for web applications" data-ar="لتحميل البيانات في تطبيقات الويب JavaScript بلغة (Seeder Files) تطوير ملفات زرع البيانات">Develop seeder file in javascript to load data for web applications</li>
                             </ul>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2003 - 2024</div>
                         <div class="timeline-content">
-                            <h3>Instructional + Admin Roles</h3>
-                            <h4>Ministry of Defence</h4>
+                            <h3 data-en="Instructional + Admin Roles" data-ar="أدوار تعليمية وإدارية">Instructional + Admin Roles</h3>
+                            <h4 data-en="Ministry of Defence" data-ar="وزارة الدفاع">Ministry of Defence</h4>
                             <ul>
-                                <li>Led data-driven evaluations and performance analysis for education programs</li>
-                                <li>Conducted IT and data training workshops and developed educational materials with strong analytical and research elements</li>
+                                <li data-en="Led data-driven evaluations and performance analysis for education programs" data-ar="قيادة التقييمات المبنية على البيانات وتحليل الأداء لبرامج التعليم">Led data-driven evaluations and performance analysis for education programs</li>
+                                <li data-en="Conducted IT and data training workshops and developed educational materials with strong analytical and research elements" data-ar="إجراء ورش تدريبية في تكنولوجيا المعلومات والبيانات وتطوير المواد التعليمية مع عناصر تحليلية وبحثية قوية">Conducted IT and data training workshops and developed educational materials with strong analytical and research elements</li>
                             </ul>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2000 - 2003</div>
                         <div class="timeline-content">
-                            <h3>System Administrator</h3>
+                            <h3 data-en="System Administrator" data-ar="مدير النظام">System Administrator</h3>
                             <h4>SAGA Sports (Pvt) Ltd, Sialkot</h4>
                             <ul>
-                                <li>Managing and troubleshooting LAN and Database Server</li>
-                                <li>Designing Ad hoc Reports in Seagate Crystal Reports</li>
-                                <li>Database administration (Import, Export, SQL, Backup)</li>
-                                <li>Implementation of in-house developed software and user training</li>
+                                <li data-en="Managing and troubleshooting LAN and Database Server" data-ar="إدارة واستكشاف أخطاء الشبكة المحلية وخادم قاعدة البيانات">Managing and troubleshooting LAN and Database Server</li>
+                                <li data-en="Designing Ad hoc Reports in Seagate Crystal Reports" data-ar="تصميم التقارير المخصصة في Seagate Crystal Reports">Designing Ad hoc Reports in Seagate Crystal Reports</li>
+                                <li data-en="Database administration (Import, Export, SQL, Backup)" data-ar="إدارة قاعدة البيانات (الاستيراد، التصدير، SQL، النسخ الاحتياطي)">Database administration (Import, Export, SQL, Backup)</li>
+                                <li data-en="Implementation of in-house developed software and user training" data-ar="تنفيذ البرمجيات المطورة داخلياً وتدريب المستخدمين">Implementation of in-house developed software and user training</li>
                             </ul>
                         </div>
                     </div>
@@ -262,24 +244,12 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
             <div class="skills-grid">
-                <!-- Skeleton Content -->
-                <div class="skeleton-content">
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                </div>
-                
-                <!-- Actual Content -->
-                <div class="actual-content">
-                    <div class="skill-category flip-card">
+                      <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-code"></i> Programming</h3>
+                                <h3><i class="fas fa-code"></i> <span data-en="Programming" data-ar="البرمجة">Programming</span></h3>
                                 <div class="skill-items">
                                     <span class="skill-item">Python</span>
                                     <span class="skill-item">SQL</span>
@@ -288,12 +258,12 @@
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>Programming Details</h3>
+                                <h3 data-en="Programming Details" data-ar="تفاصيل البرمجة">Programming Details</h3>
                                 <ul>
-                                    <li>5+ years Python experience</li>
-                                    <li>Advanced SQL queries & optimization</li>
-                                    <li>Statistical analysis with R</li>
-                                    <li>Mathematical modeling</li>
+                                    <li data-en="5+ years Python experience" data-ar="أكثر من 5 سنوات خبرة في Python">5+ years Python experience</li>
+                                    <li data-en="Advanced SQL queries & optimization" data-ar="استعلامات SQL متقدمة وتحسين">Advanced SQL queries & optimization</li>
+                                    <li data-en="Statistical analysis with R" data-ar="التحليل الإحصائي باستخدام R">Statistical analysis with R</li>
+                                    <li data-en="Mathematical modeling" data-ar="النمذجة الرياضية">Mathematical modeling</li>
                                 </ul>
                             </div>
                         </div>
@@ -302,7 +272,7 @@
                     <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</h3>
+                                <h3><i class="fas fa-chart-bar"></i> <span data-en="Data Analysis & Visualization" data-ar="تحليل البيانات والتصور">Data Analysis & Visualization</span></h3>
                                 <div class="skill-items">
                                     <span class="skill-item">Power BI</span>
                                     <span class="skill-item">Excel</span>
@@ -312,12 +282,12 @@
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>Visualization Expertise</h3>
+                                <h3 data-en="Visualization Expertise" data-ar="خبرة التصور">Visualization Expertise</h3>
                                 <ul>
-                                    <li>Interactive dashboards</li>
-                                    <li>Statistical analysis</li>
-                                    <li>Data storytelling</li>
-                                    <li>Business intelligence</li>
+                                    <li data-en="Interactive dashboards" data-ar="لوحات معلومات تفاعلية">Interactive dashboards</li>
+                                    <li data-en="Statistical analysis" data-ar="التحليل الإحصائي">Statistical analysis</li>
+                                    <li data-en="Data storytelling" data-ar="سرد البيانات">Data storytelling</li>
+                                    <li data-en="Business intelligence" data-ar="ذكاء الأعمال">Business intelligence</li>
                                 </ul>
                             </div>
                         </div>
@@ -326,7 +296,7 @@
                     <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-robot"></i> Machine Learning & AI</h3>
+                                <h3><i class="fas fa-robot"></i> <span data-en="Machine Learning & AI" data-ar="التعلم الآلي والذكاء الاصطناعي">Machine Learning & AI</span></h3>
                                 <div class="skill-items">
                                     <span class="skill-item">Scikit-learn</span>
                                     <span class="skill-item">TensorFlow</span>
@@ -336,12 +306,12 @@
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>ML Specializations</h3>
+                                <h3 data-en="ML Specializations" data-ar="تخصصات التعلم الآلي">ML Specializations</h3>
                                 <ul>
-                                    <li>Deep learning models</li>
-                                    <li>NLP & text analysis</li>
-                                    <li>Computer vision</li>
-                                    <li>Predictive modeling</li>
+                                    <li data-en="Deep learning models" data-ar="نماذج التعلم العميق">Deep learning models</li>
+                                    <li data-en="NLP & text analysis" data-ar="معالجة اللغة الطبيعية وتحليل النصوص">NLP & text analysis</li>
+                                    <li data-en="Computer vision" data-ar="رؤية الحاسوب">Computer vision</li>
+                                    <li data-en="Predictive modeling" data-ar="النمذجة التنبؤية">Predictive modeling</li>
                                 </ul>
                             </div>
                         </div>
@@ -350,7 +320,7 @@
                     <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-database"></i> Big Data & Databases</h3>
+                                <h3><i class="fas fa-database"></i> <span data-en="Big Data & Databases" data-ar="البيانات الضخمة وقواعد البيانات">Big Data & Databases</span></h3>
                                 <div class="skill-items">
                                     <span class="skill-item">PySpark</span>
                                     <span class="skill-item">Hadoop</span>
@@ -361,12 +331,12 @@
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>Big Data Skills</h3>
+                                <h3 data-en="Big Data Skills" data-ar="مهارات البيانات الضخمة">Big Data Skills</h3>
                                 <ul>
-                                    <li>Distributed computing</li>
-                                    <li>Data warehousing</li>
-                                    <li>ETL processes</li>
-                                    <li>Database optimization</li>
+                                    <li data-en="Distributed computing" data-ar="الحوسبة الموزعة">Distributed computing</li>
+                                    <li data-en="Data warehousing" data-ar="مستودعات البيانات">Data warehousing</li>
+                                    <li data-en="ETL processes" data-ar="عمليات ETL">ETL processes</li>
+                                    <li data-en="Database optimization" data-ar="تحسين قاعدة البيانات">Database optimization</li>
                                 </ul>
                             </div>
                         </div>
@@ -375,7 +345,7 @@
                     <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                                <h3><i class="fas fa-tools"></i> <span data-en="Tools & Frameworks" data-ar="الأدوات والأطر">Tools & Frameworks</span></h3>
                                 <div class="skill-items">
                                     <span class="skill-item">Jupyter</span>
                                     <span class="skill-item">VS Code</span>
@@ -385,12 +355,12 @@
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>Development Tools</h3>
+                                <h3 data-en="Development Tools" data-ar="أدوات التطوير">Development Tools</h3>
                                 <ul>
-                                    <li>Version control</li>
-                                    <li>Web scraping</li>
-                                    <li>App development</li>
-                                    <li>Testing automation</li>
+                                    <li data-en="Version control" data-ar="التحكم في الإصدار">Version control</li>
+                                    <li data-en="Web scraping" data-ar="استخراج البيانات من الويب">Web scraping</li>
+                                    <li data-en="App development" data-ar="تطوير التطبيقات">App development</li>
+                                    <li data-en="Testing automation" data-ar="أتمتة الاختبار">Testing automation</li>
                                 </ul>
                             </div>
                         </div>
@@ -399,26 +369,25 @@
                     <div class="skill-category flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                                <h3><i class="fas fa-brain"></i> <span data-en="Soft Skills" data-ar="المهارات الناعمة">Soft Skills</span></h3>
                                 <div class="skill-items">
-                                    <span class="skill-item">Data Storytelling</span>
-                                    <span class="skill-item">Critical Thinking</span>
-                                    <span class="skill-item">Communication</span>
-                                    <span class="skill-item">Collaboration</span>
+                                    <span class="skill-item" data-en="Data Storytelling" data-ar="سرد البيانات">Data Storytelling</span>
+                                    <span class="skill-item" data-en="Critical Thinking" data-ar="التفكير النقدي">Critical Thinking</span>
+                                    <span class="skill-item" data-en="Communication" data-ar="التواصل">Communication</span>
+                                    <span class="skill-item" data-en="Collaboration" data-ar="التعاون">Collaboration</span>
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <h3>Professional Skills</h3>
+                                <h3 data-en="Professional Skills" data-ar="المهارات المهنية">Professional Skills</h3>
                                 <ul>
-                                    <li>Stakeholder communication</li>
-                                    <li>Problem-solving</li>
-                                    <li>Team leadership</li>
-                                    <li>Project management</li>
+                                    <li data-en="Stakeholder communication" data-ar="التواصل مع أصحاب المصلحة">Stakeholder communication</li>
+                                    <li data-en="Problem-solving" data-ar="حل المشكلات">Problem-solving</li>
+                                    <li data-en="Team leadership" data-ar="قيادة الفريق">Team leadership</li>
+                                    <li data-en="Project management" data-ar="إدارة المشاريع">Project management</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -426,249 +395,235 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Skeleton Content -->
-                <div class="skeleton-content">
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
-                    <div class="skeleton skeleton-card"></div>
+            <h2 class="section-title" data-en="Featured Projects" data-ar="المشاريع المميزة">Featured Projects</h2>
+               <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="CICIDS-2017 Analysis">
+                            </div>
+                            <div class="project-content">
+                                <h3 data-en="CICIDS-2017 Feature Analysis for Anomaly Detection" data-ar="تحليل ميزات CICIDS-2017 لاكتشاف الشذوذ">CICIDS-2017 Feature Analysis for Anomaly Detection</h3>
+                                <p data-en="Applied Information Gain feature selection on network intrusion dataset, testing 7 feature subsets across 5 classifiers with 10-fold cross-validation." data-ar="تطبيق اختيار الميزات بكسب المعلومات على مجموعة بيانات اختراق الشبكة، واختبار 7 مجموعات فرعية من الميزات عبر 5 مصنفات مع التحقق المتقاطع 10 أضعاف.">Applied Information Gain feature selection on network intrusion dataset, testing 7 feature subsets across 5 classifiers with 10-fold cross-validation.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Weka</span>
+                                    <span data-en="Machine Learning" data-ar="التعلم الآلي">Machine Learning</span>
+                                    <span data-en="Feature Selection" data-ar="اختيار الميزات">Feature Selection</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="Technical Details" data-ar="التفاصيل التقنية">Technical Details</h3>
+                                <ul>
+                                    <li data-en="Merged 8 CSV files into unified dataset" data-ar="دمج 8 ملفات CSV في مجموعة بيانات موحدة">Merged 8 CSV files into unified dataset</li>
+                                    <li data-en="Reduced features from original to 77 key features" data-ar="تقليل الميزات من الأصلية إلى 77 ميزة رئيسية">Reduced features from original to 77 key features</li>
+                                    <li data-en="Evaluated accuracy, TPR/FPR, precision, recall" data-ar="تقييم الدقة، TPR/FPR، الدقة، الاستدعاء">Evaluated accuracy, TPR/FPR, precision, recall</li>
+                                    <li data-en="Improved anomaly detection performance" data-ar="تحسين أداء اكتشاف الشذوذ">Improved anomaly detection performance</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-en="Code" data-ar="الكود">Code</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> <span data-en="Details" data-ar="التفاصيل">Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Actual Content -->
-                <div class="actual-content">
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="CICIDS-2017 Analysis">
-                                </div>
-                                <div class="project-content">
-                                    <h3>CICIDS-2017 Feature Analysis for Anomaly Detection</h3>
-                                    <p>Applied Information Gain feature selection on network intrusion dataset, testing 7 feature subsets across 5 classifiers with 10-fold cross-validation.</p>
-                                    <div class="project-tech">
-                                        <span>Python</span>
-                                        <span>Weka</span>
-                                        <span>Machine Learning</span>
-                                        <span>Feature Selection</span>
-                                    </div>
+
+                <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Malaria Detection">
+                            </div>
+                            <div class="project-content">
+                                <h3 data-en="Malaria Detection via CNN" data-ar="اكتشاف الملاريا عبر CNN">Malaria Detection via CNN</h3>
+                                <p data-en="Comparative study using 27,610 NIH blood smear images, comparing ML models and CNNs (LeNet-5, AlexNet, ResNet, DenseNet, EfficientNet)." data-ar="دراسة مقارنة باستخدام 27,610 صورة لطاخة دم من NIH، مقارنة نماذج ML و CNNs (LeNet-5، AlexNet، ResNet، DenseNet، EfficientNet).">Comparative study using 27,610 NIH blood smear images, comparing ML models and CNNs (LeNet-5, AlexNet, ResNet, DenseNet, EfficientNet).</p>
+                                <div class="project-tech">
+                                    <span data-en="Deep Learning" data-ar="التعلم العميق">Deep Learning</span>
+                                    <span>CNN</span>
+                                    <span data-en="Medical Imaging" data-ar="التصوير الطبي">Medical Imaging</span>
+                                    <span>TensorFlow</span>
                                 </div>
                             </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>Technical Details</h3>
-                                    <ul>
-                                        <li>Merged 8 CSV files into unified dataset</li>
-                                        <li>Reduced features from original to 77 key features</li>
-                                        <li>Evaluated accuracy, TPR/FPR, precision, recall</li>
-                                        <li>Improved anomaly detection performance</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i> Code
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i> Details
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="Research Impact" data-ar="تأثير البحث">Research Impact</h3>
+                                <ul>
+                                    <li data-en="Binary classification of blood smears" data-ar="التصنيف الثنائي للطاخات الدموية">Binary classification of blood smears</li>
+                                    <li data-en="Compared 5 different CNN architectures" data-ar="مقارنة 5 معماريات CNN مختلفة">Compared 5 different CNN architectures</li>
+                                    <li data-en="Achieved high accuracy in medical diagnosis" data-ar="تحقيق دقة عالية في التشخيص الطبي">Achieved high accuracy in medical diagnosis</li>
+                                    <li data-en="Published research findings" data-ar="نشر نتائج البحث">Published research findings</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-en="Code" data-ar="الكود">Code</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-file-pdf"></i> <span data-en="Paper" data-ar="البحث">Paper</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="Malaria Detection">
-                                </div>
-                                <div class="project-content">
-                                    <h3>Malaria Detection via CNN</h3>
-                                    <p>Comparative study using 27,610 NIH blood smear images, comparing ML models and CNNs (LeNet-5, AlexNet, ResNet, DenseNet, EfficientNet).</p>
-                                    <div class="project-tech">
-                                        <span>Deep Learning</span>
-                                        <span>CNN</span>
-                                        <span>Medical Imaging</span>
-                                        <span>TensorFlow</span>
-                                    </div>
+                <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Customer Churn">
+                            </div>
+                            <div class="project-content">
+                                <h3 data-en="Customer Churn Prediction" data-ar="التنبؤ بتسرب العملاء">Customer Churn Prediction</h3>
+                                <p data-en="Built scalable churn prediction model using PySpark with regression algorithms, optimized for recall using F2-score evaluation." data-ar="بناء نموذج قابل للتوسع للتنبؤ بالتسرب باستخدام PySpark مع خوارزميات الانحدار، محسن للاستدعاء باستخدام تقييم F2-score.">Built scalable churn prediction model using PySpark with regression algorithms, optimized for recall using F2-score evaluation.</p>
+                                <div class="project-tech">
+                                    <span>PySpark</span>
+                                    <span data-en="Machine Learning" data-ar="التعلم الآلي">Machine Learning</span>
+                                    <span data-en="Big Data" data-ar="البيانات الضخمة">Big Data</span>
+                                    <span data-en="Predictive Analytics" data-ar="التحليلات التنبؤية">Predictive Analytics</span>
                                 </div>
                             </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>Research Impact</h3>
-                                    <ul>
-                                        <li>Binary classification of blood smears</li>
-                                        <li>Compared 5 different CNN architectures</li>
-                                        <li>Achieved high accuracy in medical diagnosis</li>
-                                        <li>Published research findings</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i> Code
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-file-pdf"></i> Paper
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="Business Value" data-ar="القيمة التجارية">Business Value</h3>
+                                <ul>
+                                    <li data-en="Scalable big data processing" data-ar="معالجة البيانات الضخمة القابلة للتوسع">Scalable big data processing</li>
+                                    <li data-en="Real-time churn prediction" data-ar="التنبؤ بالتسرب في الوقت الفعلي">Real-time churn prediction</li>
+                                    <li data-en="Customer retention insights" data-ar="رؤى الاحتفاظ بالعملاء">Customer retention insights</li>
+                                    <li data-en="Deployed production model" data-ar="نموذج الإنتاج المنشور">Deployed production model</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-en="Code" data-ar="الكود">Code</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> <span data-en="Demo" data-ar="العرض التوضيحي">Demo</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="Customer Churn">
-                                </div>
-                                <div class="project-content">
-                                    <h3>Customer Churn Prediction</h3>
-                                    <p>Built scalable churn prediction model using PySpark with regression algorithms, optimized for recall using F2-score evaluation.</p>
-                                    <div class="project-tech">
-                                        <span>PySpark</span>
-                                        <span>Machine Learning</span>
-                                        <span>Big Data</span>
-                                        <span>Predictive Analytics</span>
-                                    </div>
+                <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Sentiment Analysis">
+                            </div>
+                            <div class="project-content">
+                                <h3 data-en="Hate Speech Classification" data-ar="تصنيف خطاب الكراهية">Hate Speech Classification</h3>
+                                <p data-en="NLP project classifying hate speech using multi-platform data (YouTube, Reddit, Twitter, Wikipedia) with BERT achieving superior performance." data-ar="مشروع معالجة اللغة الطبيعية لتصنيف خطاب الكراهية باستخدام بيانات متعددة المنصات (YouTube، Reddit، Twitter، Wikipedia) مع BERT لتحقيق أداء متفوق.">NLP project classifying hate speech using multi-platform data (YouTube, Reddit, Twitter, Wikipedia) with BERT achieving superior performance.</p>
+                                <div class="project-tech">
+                                    <span>NLP</span>
+                                    <span>BERT</span>
+                                    <span data-en="Text Classification" data-ar="تصنيف النصوص">Text Classification</span>
+                                    <span data-en="Deep Learning" data-ar="التعلم العميق">Deep Learning</span>
                                 </div>
                             </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>Business Value</h3>
-                                    <ul>
-                                        <li>Scalable big data processing</li>
-                                        <li>Real-time churn prediction</li>
-                                        <li>Customer retention insights</li>
-                                        <li>Deployed production model</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i> Code
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i> Demo
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="NLP Innovation" data-ar="ابتكار معالجة اللغة الطبيعية">NLP Innovation</h3>
+                                <ul>
+                                    <li data-en="Multi-platform data integration" data-ar="تكامل البيانات متعددة المنصات">Multi-platform data integration</li>
+                                    <li data-en="Advanced text preprocessing" data-ar="معالجة النصوص المتقدمة">Advanced text preprocessing</li>
+                                    <li data-en="BERT contextual understanding" data-ar="فهم السياق باستخدام BERT">BERT contextual understanding</li>
+                                    <li data-en="High accuracy classification" data-ar="تصنيف عالي الدقة">High accuracy classification</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-en="Code" data-ar="الكود">Code</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-chart-line"></i> <span data-en="Results" data-ar="النتائج">Results</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="Sentiment Analysis">
-                                </div>
-                                <div class="project-content">
-                                    <h3>Hate Speech Classification</h3>
-                                    <p>NLP project classifying hate speech using multi-platform data (YouTube, Reddit, Twitter, Wikipedia) with BERT achieving superior performance.</p>
-                                    <div class="project-tech">
-                                        <span>NLP</span>
-                                        <span>BERT</span>
-                                        <span>Text Classification</span>
-                                        <span>Deep Learning</span>
-                                    </div>
+                <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Power BI Dashboard">
+                            </div>
+                            <div class="project-content">
+                                <h3 data-en="Interactive Dashboards (Power BI)" data-ar="لوحات المعلومات التفاعلية (Power BI)">Interactive Dashboards (Power BI)</h3>
+                                <p data-en="Created comprehensive dashboards for road accident analysis and car sales with interactive slicers, KPIs, and visual storytelling." data-ar="إنشاء لوحات معلومات شاملة لتحليل حوادث الطرق ومبيعات السيارات مع أدوات تقطيع تفاعلية ومؤشرات الأداء الرئيسية وسرد البيانات المرئي.">Created comprehensive dashboards for road accident analysis and car sales with interactive slicers, KPIs, and visual storytelling.</p>
+                                <div class="project-tech">
+                                    <span>Power BI</span>
+                                    <span>Excel</span>
+                                    <span data-en="Data Visualization" data-ar="تصور البيانات">Data Visualization</span>
+                                    <span data-en="Business Intelligence" data-ar="ذكاء الأعمال">Business Intelligence</span>
                                 </div>
                             </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>NLP Innovation</h3>
-                                    <ul>
-                                        <li>Multi-platform data integration</li>
-                                        <li>Advanced text preprocessing</li>
-                                        <li>BERT contextual understanding</li>
-                                        <li>High accuracy classification</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i> Code
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-chart-line"></i> Results
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="Dashboard Features" data-ar="ميزات لوحة المعلومات">Dashboard Features</h3>
+                                <ul>
+                                    <li data-en="Interactive slicers and filters" data-ar="أدوات تقطيع ومرشحات تفاعلية">Interactive slicers and filters</li>
+                                    <li data-en="Real-time KPI monitoring" data-ar="مراقبة مؤشرات الأداء الرئيسية في الوقت الفعلي">Real-time KPI monitoring</li>
+                                    <li data-en="Visual data storytelling" data-ar="سرد البيانات المرئي">Visual data storytelling</li>
+                                    <li data-en="Executive reporting" data-ar="التقارير التنفيذية">Executive reporting</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-chart-bar"></i> <span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-download"></i> <span data-en="Download" data-ar="تحميل">Download</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="Power BI Dashboard">
-                                </div>
-                                <div class="project-content">
-                                    <h3>Interactive Dashboards (Power BI)</h3>
-                                    <p>Created comprehensive dashboards for road accident analysis and car sales with interactive slicers, KPIs, and visual storytelling.</p>
-                                    <div class="project-tech">
-                                        <span>Power BI</span>
-                                        <span>Excel</span>
-                                        <span>Data Visualization</span>
-                                        <span>Business Intelligence</span>
-                                    </div>
-                                </div>
+                <div class="project-card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Streamlit App">
                             </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>Dashboard Features</h3>
-                                    <ul>
-                                        <li>Interactive slicers and filters</li>
-                                        <li>Real-time KPI monitoring</li>
-                                        <li>Visual data storytelling</li>
-                                        <li>Executive reporting</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-chart-bar"></i> Dashboard
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-download"></i> Download
-                                        </a>
-                                    </div>
+                            <div class="project-content">
+                                <h3 data-en="Image Background Remover App" data-ar="تطبيق إزالة خلفية الصورة">Image Background Remover App</h3>
+                                <p data-en="Interactive Streamlit application for automatic background removal using OpenCV and computer vision techniques." data-ar="تطبيق Streamlit تفاعلي لإزالة الخلفية التلقائية باستخدام OpenCV وتقنيات رؤية الحاسوب.">Interactive Streamlit application for automatic background removal using OpenCV and computer vision techniques.</p>
+                                <div class="project-tech">
+                                    <span>Streamlit</span>
+                                    <span>OpenCV</span>
+                                    <span data-en="Computer Vision" data-ar="رؤية الحاسوب">Computer Vision</span>
+                                    <span>Python</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=200&width=300" alt="Streamlit App">
-                                </div>
-                                <div class="project-content">
-                                    <h3>Image Background Remover App</h3>
-                                    <p>Interactive Streamlit application for automatic background removal using OpenCV and computer vision techniques.</p>
-                                    <div class="project-tech">
-                                        <span>Streamlit</span>
-                                        <span>OpenCV</span>
-                                        <span>Computer Vision</span>
-                                        <span>Python</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <div class="project-details">
-                                    <h3>App Features</h3>
-                                    <ul>
-                                        <li>Real-time image processing</li>
-                                        <li>User-friendly interface</li>
-                                        <li>Multiple image formats</li>
-                                        <li>Deployed web application</li>
-                                    </ul>
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fab fa-github"></i> Code
-                                        </a>
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-play"></i> Try App
-                                        </a>
-                                    </div>
+                        <div class="flip-card-back">
+                            <div class="project-details">
+                                <h3 data-en="App Features" data-ar="ميزات التطبيق">App Features</h3>
+                                <ul>
+                                    <li data-en="Real-time image processing" data-ar="معالجة الصور في الوقت الفعلي">Real-time image processing</li>
+                                    <li data-en="User-friendly interface" data-ar="واجهة سهلة الاستخدام">User-friendly interface</li>
+                                    <li data-en="Multiple image formats" data-ar="تنسيقات صور متعددة">Multiple image formats</li>
+                                    <li data-en="Deployed web application" data-ar="تطبيق ويب منشور">Deployed web application</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-en="Code" data-ar="الكود">Code</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-play"></i> <span data-en="Try App" data-ar="جرب التطبيق">Try App</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -681,55 +636,81 @@
     <!-- Education & Certifications Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
+            <h2 class="section-title" data-en="Education & Certifications" data-ar="التعليم والشهادات">Education & Certifications</h2>
             <div class="education-content">
                 <div class="education-section">
-                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <h3><i class="fas fa-graduation-cap"></i> <span data-en="Education" data-ar="التعليم">Education</span></h3>
                     <div class="education-item">
-                        <h4>MS Computer Science</h4>
-                        <p>COMSATS University Islamabad | 2019-2023</p>
-                        <p class="education-note">(Course work Completed)</p>
+                        <h4 data-en="MS Computer Science" data-ar="ماجستير علوم الحاسوب">MS Computer Science</h4>
+                        <p data-en="COMSATS University Islamabad | 2019-2023" data-ar="جامعة كومساتس إسلام آباد | 2019-2023">COMSATS University Islamabad | 2019-2023</p>
+                        <p class="education-note" data-en="(Course work Completed)" data-ar="(تم إكمال المقررات الدراسية)">(Course work Completed)</p>
                     </div>
                     <div class="education-item">
-                        <h4>Master of Computer Science</h4>
-                        <p>Virtual University of Pakistan | 2009-2011</p>
+                        <h4 data-en="Master of Computer Science" data-ar="ماجستير علوم الحاسوب">Master of Computer Science</h4>
+                        <p data-en="Virtual University of Pakistan | 2009-2011" data-ar="الجامعة الافتراضية في باكستان | 2009-2011">Virtual University of Pakistan | 2009-2011</p>
                     </div>
                     <div class="education-item">
-                        <h4>Post Graduate Diploma in Software Engineering</h4>
-                        <p>Govt Murray College Sialkot | 1999-2000</p>
+                        <h4 data-en="Post Graduate Diploma in Software Engineering" data-ar="دبلوم دراسات عليا في هندسة البرمجيات">Post Graduate Diploma in Software Engineering</h4>
+                        <p data-en="Govt Murray College Sialkot | 1999-2000" data-ar="كلية موراي الحكومية سيالكوت | 1999-2000">Govt Murray College Sialkot | 1999-2000</p>
                     </div>
                     <div class="education-item">
-                        <h4>Bachelor of Science & Bachelor of Education</h4>
-                        <p>University of the Punjab | 1997 & 2003</p>
+                        <h4 data-en="Bachelor of Science & Bachelor of Education" data-ar="بكالوريوس العلوم وبكالوريوس التربية">Bachelor of Science & Bachelor of Education</h4>
+                        <p data-en="University of the Punjab | 1997 & 2003" data-ar="جامعة البنجاب | 1997 و 2003">University of the Punjab | 1997 & 2003</p>
                     </div>
                 </div>
                 
                 <div class="certifications-section">
-                    <h3><i class="fas fa-certificate"></i> Key Certifications</h3>
+                    <h3><i class="fas fa-certificate"></i> <span data-en="Key Certifications" data-ar="الشهادات الرئيسية">Key Certifications</span></h3>
                     <div class="certifications-grid">
                         <div class="cert-item">
                             <i class="fas fa-flask"></i>
-                            <span>Applied Data Science Lab - WorldQuant</span>
+                            <span data-en="Applied AI Lab: Deep Learning for Computer Vision - WorldQuant" data-ar="مختبر الذكاء الاصطناعي التطبيقي: التعلم العميق لرؤية الكمبيوتر - WorldQuant">Applied AI Lab: Deep Learning for Computer Vision - WorldQuant</span>
+                            <a class="cert-link-btn" href="https://www.credly.com/badges/aa09befb-2a98-49cc-ab32-a3f95d9292e8" target="_blank">View</a>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-flask"></i>
+                            <span data-en="Integromate Make - Foundation" data-ar="إنتغرامات ميك - الأساس">Integromate Make - Foundation</span>
+                            <a class="cert-link-btn" href="https://www.credly.com/badges/21ee82f7-1fa0-4a3e-af16-47160866a9b7" target="_blank">View</a>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-flask"></i>
+                            <span data-en="Applied Data Science Lab - WorldQuant" data-ar="مختبر علوم البيانات التطبيقية - WorldQuant">Applied Data Science Lab - WorldQuant</span>
+                            <a class="cert-link-btn" href="https://www.credly.com/badges/1997c3d7-b580-4609-810e-dceddadc649c" target="_blank">View</a>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-brain"></i>
-                            <span>Machine Learning Specialization - DeepLearning.AI</span>
+                            <span data-en="Machine Learning Specialization - DeepLearning.AI" data-ar="تخصص التعلم الآلي - DeepLearning.AI">Machine Learning Specialization - DeepLearning.AI</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/specialization/UBXPFT5EVAR4" target="_blank">View</a>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-database"></i>
-                            <span>Big Data Specialization - UC San Diego</span>
+                            <span data-en="Modern Big Data Analysis with SQL Specialization - UC San Diego" data-ar="تخصص البيانات الضخمة - UC San Diego">Modern Big Data Analysis with SQL Specialization - UC San Diego</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/specializations/big-data" target="_blank">View</a>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-chart-line"></i>
-                            <span>Modern Big Data Analysis with SQL - Cloudera</span>
+                            <span data-en="Modern Big Data Analysis with SQL - Cloudera" data-ar="تحليل البيانات الضخمة الحديثة باستخدام SQL - Cloudera">Modern Big Data Analysis with SQL - Cloudera</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/specialization/JFJ4HVY23BD5" target="_blank">View</a>
                         </div>
                         <div class="cert-item">
                             <i class="fab fa-python"></i>
-                            <span>Python for Data Science - IBM</span>
+                            <span data-en="Python for Data Science - IBM" data-ar="Python لعلوم البيانات - IBM">Python for Data Science - IBM</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/verify/PW3KN8H46BE9" target="_blank">View</a>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-chart-bar"></i>
-                            <span>Power BI Certification - Microsoft</span>
+                            <span data-en="Power BI Certification - Microsoft" data-ar="شهادة Power BI - Microsoft">Power BI Certification - Microsoft</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/verify/5A3EW8NPR679" target="_blank">View</a>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span data-en="Work Smarter with Microsoft Excel - Coursera" data-ar=" Coursera - Microsoft Excel اعمل بذكاء مع ">Work Smarter with Microsoft Excel - Coursera</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/verify/DMQ3ACLRPMGB" target="_blank">View</a>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span data-en="Introduction to Data Analysis Using Excel" data-ar="Excelمقدمة في تحليل البيانات باستخدام ">Introduction to Data Analysis Using Excel</span>
+                            <a class="cert-link-btn" href="https://www.coursera.org/account/accomplishments/verify/2PGDRHVH9WTZ" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -740,11 +721,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's collaborate on data-driven solutions!</h3>
-                    <p>I'm passionate about turning data into actionable insights and always interested in new opportunities and exciting data projects.</p>
+                    <h3 data-en="Let's collaborate on data-driven solutions!" data-ar="دعنا نتعاون في الحلول المبنية على البيانات!">Let's collaborate on data-driven solutions!</h3>
+                    <p data-en="I'm passionate about turning data into actionable insights and always interested in new opportunities and exciting data projects." data-ar="أنا شغوف بتحويل البيانات إلى رؤى قابلة للتنفيذ ومهتم دائماً بالفرص الجديدة ومشاريع البيانات المثيرة.">I'm passionate about turning data into actionable insights and always interested in new opportunities and exciting data projects.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -756,39 +737,39 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Lahore, Pakistan</span>
+                            <span data-en="Lahore, Pakistan" data-ar="لاهور، باكستان">Lahore, Pakistan</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-globe"></i>
-                            <span>Available for Remote Work</span>
+                            <span data-en="Available for Remote Work" data-ar="متاح للعمل عن بُعد">Available for Remote Work</span>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/muhammad-asif-96927a1b8/" class="social-link" title="LinkedIn" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="social-link" title="GitHub">
+                        <a href="https://github.com/MuhammadAsif038" class="social-link" title="GitHub" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" class="social-link" title="Kaggle">
+                        <a href="https://www.kaggle.com/muhammadasif038" class="social-link" title="Kaggle" target="_blank ">
                             <i class="fab fa-kaggle"></i>
                         </a>
                     </div>
                 </div>
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-ar="اسمك" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-ar="بريدك الإلكتروني" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-ar="الموضوع" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-ar="رسالتك" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
                 </form>
             </div>
         </div>
@@ -797,7 +778,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Muhammad Asif. All rights reserved. | Data Analyst Portfolio</p>
+            <p data-en="&copy; 2024 Muhammad Asif. All rights reserved. | Data Analyst Portfolio" data-ar="&copy; 2024 محمد عاصف. جميع الحقوق محفوظة. | محفظة محلل البيانات">&copy; 2024 Muhammad Asif. All rights reserved. | Data Analyst Portfolio</p>
         </div>
     </footer>
 
