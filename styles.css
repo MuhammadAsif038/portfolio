@@ -439,12 +439,23 @@ body {
 }
 
 .hero-content {
-  max-width: 1200px;
+  max-width: 1165px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1.2fr;
   gap: 4rem;
   align-items: center;
+  min-height: 500px;
+}
+.hero-text {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
 .hero h1 {
@@ -1215,6 +1226,11 @@ section {
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
+    width: 70%;
   }
 
   .hero h1 {
